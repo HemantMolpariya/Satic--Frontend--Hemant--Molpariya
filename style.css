@@ -145,3 +145,47 @@ main{
     display: block;
   }
 }
+/* Day-7 */
+.notification {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  z-index: 1000;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+  .notification.hidden {
+  display: none;
+}
+
+.notification button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.notification.success {
+  background-color: green;
+  transform: translateY(0);
+}
+
+.notification.error {
+  background-color: red;
+  transform: translateY(0);
+}
+
+#close-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+}

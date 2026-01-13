@@ -40,3 +40,20 @@ if (searchForm && searchInput) {
     alert("Searching for: " + value);
   });
 }
+/* ===== Day 7: Notification ===== */
+const notification = document.getElementById("notification");
+const message = document.getElementById("message");
+
+function showSuccess() {
+  message.textContent = "Success! Task deployed successfully.";
+  notification.className = "notification success";
+}
+
+function showError() {
+  message.textContent = "Error! Something went wrong.";
+  notification.className = "notification error";
+}
+
+function dismiss() {
+  notification.classList.add("hidden");
+}

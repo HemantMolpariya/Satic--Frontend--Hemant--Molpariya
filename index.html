@@ -88,7 +88,21 @@
 
         </div>
        </section>
-      
+        <div id="message" class="notification"></div>
+<script>
+function onSubmitForm() {
+  const msgEl = document.getElementById("message");
+  const isValid = true;
+
+  if (isValid) {
+    msgEl.textContent = "Success!";
+    msgEl.className = "notification success";
+  } else {
+    msgEl.textContent = "Please fill required fields!";
+    msgEl.className = "notification error";
+  }
+}
+</script>
 
         <script src ="script.js"></script>
     </body>

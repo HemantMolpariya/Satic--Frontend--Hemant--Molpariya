@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <title>
-            Navbar with Search
-        </title>
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
-       <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!-- Daay-7-Task -->
-     <div id="notification" class="notification hidden">
-          <span id="message"></span>
-          <button onclick="dismiss()">✖</button>
-      </div>
-      <div class="container">
-        <h2>Day 7 – Notification Banner</h2>
-        <button class="btn success-btn" onclick="showSuccess()">Show Success</button>
-        <button class="btn error-btn" onclick="showError()">Show Error</button>
-     </div>
-<!-- NAVBAR -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Internship | Day 6</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<!-- Notification Banner -->
+  <div id="notification" class="notification hidden">
+  <span id="message"></span>
+  <button onclick="dismiss()">✖</button>
+</div>
+
+<div class="container">
+  <h2>Day 7 – Notification Banner</h2>
+  <button class="btn success-btn" onclick="showSuccess()">Show Success</button>
+  <button class="btn error-btn" onclick="showError()">Show Error</button>
+</div>
+  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">SATIC</div>
 
@@ -47,51 +48,54 @@
     </ul>
   </nav>
 
- <!-- Mian content -->
-       <main id ="id1">
-         <h1> Fronted Intership</h1><br>
-         <h2>Day-6 task completed </h2><br>
-         <p>Name: <b>Hemant Molpariya</b></p><br>
-         <p> This website is deployed using Github pages.</p><br>
-         <button class ="Primary-btn"> Send </button>
-         <button class ="Primary-btn" disabled> Disabled</button>
-       </main>
-       
-       <section class="card-section">
-        <h2 class="card-title">Reusable Card Component</h2>
-        <div class="card-container">
-           <div class="card">
-            <img src="https://codemithra.com/wp-content/uploads/2020/09/web-design-development-blog-2.jpg" alt="card Image">
-            <div class="card-content">
-              <h3>Fronted Development</h3>
-              <p>Lern how to build modern and responsive user interfaces using HTML, CSS and JavaScript</p>
-              <button>Explore</button>
-            </div>
-           </div>
+  <!-- MAIN CONTENT -->
+  <main id="id1">
+    <h1>Frontend Internship</h1><br>
+    <h2>Day-6 Task Completed</h2><br>
+    <p>Name: <strong>Manmeet</strong></p><br>
+    <p>This website is deployed using GitHub Pages.</p><br>
 
-          <div class="card">
-            <img src="https://images.ctfassets.net/wp1lcwdav1p1/31dUrsGyucK0UNmJEQUqj3/3c57d917e84f6500ee2ec54e8760b854/UX_vs_UI.png?w=1500&q=60" alt="Card Image">
-            <div class="card-content">
-              <h3>UI Component</h3>
-              <p>Create resuable UI compontent thet improve development speed and consistency</p>
-              <button>Explore</button>
-            </div>
-          </div>
-          <div class="card">
-             <img src="https://yeswebdesignstudio.com/wp-content/uploads/2023/06/Responsive-Design-Mock-up.webp" alt="Card Image">
-              <div class="card-content">
-              <h3>Responsive Design</h3>
-              <p>Design layouts that work perfectly on mobile, tablet and desktop devices. </p>
-              <button>Explore</button>
-          </div>
-          </div>
+  
+  <section class="card-section">
+  <h2 class="card-title">Reusable Card Component</h2>
 
-        </div>
-       </section>
-        <div id="message" class="notification"></div>
+  <div class="card-container">
+
+    <div class="card">
+      <img src="https://codemithra.com/wp-content/uploads/2020/09/web-design-development-blog-2.jpg" alt="Card Image">
+      <div class="card-content">
+        <h3>Frontend Development</h3>
+        <p>Learn how to build modern and responsive user interfaces using HTML, CSS and JavaScript.</p>
+        <button>Explore</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.ctfassets.net/wp1lcwdav1p1/31dUrsGyucK0UNmJEQUqj3/3c57d917e84f6500ee2ec54e8760b854/UX_vs_UI.png?w=1500&q=60" alt="Card Image">
+      <div class="card-content">
+        <h3>UI Components</h3>
+        <p>Create reusable UI components that improve development speed and consistency.</p>
+        <button>Explore</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://yeswebdesignstudio.com/wp-content/uploads/2023/06/Responsive-Design-Mock-up.webp" alt="Card Image">
+      <div class="card-content">
+        <h3>Responsive Design</h3>
+        <p>Design layouts that work perfectly on mobile, tablet, and desktop devices.</p>
+        <button>Explore</button>
+      </div>
+    </div>
+
+  </div>
+  </section>
+  <div id="message" class="notification"></div>
 <script>
 function onSubmitForm() {
   const msgEl = document.getElementById("message");
+
+  // TEMPORARY: assume valid input
   const isValid = true;
 
   if (isValid) {
@@ -103,7 +107,8 @@ function onSubmitForm() {
   }
 }
 </script>
+  
 
-        <script src ="script.js"></script>
-    </body>
+  <script src="script.js"></script>
+</body>
 </html>

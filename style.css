@@ -9,34 +9,44 @@ body{
     background : linear-gradient(135deg, #eef2f3,#d9a4f5);
 }
 
-<!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="logo">SATIC</div>
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background-color: #222;
+  color: #fff;
+}
 
-    <!-- Search Bar (Desktop Only) -->
-    <form class="search-bar" id="searchForm">
-      <input 
-        type="text" 
-        id="searchInput" 
-        placeholder="Search..."
-        aria-label="Search"
-      />
-      <button type="submit">🔍</button>
-    </form>
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
 
-    <!-- Hamburger -->
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      ☰
-    </button>
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
 
-    <!-- Navigation Links -->
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid #fff;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
 
 /* Main */
 

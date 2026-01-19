@@ -8,17 +8,7 @@
 </head>
 <body>
   
-<!-- Notification Banner -->
-  <div id="notification" class="notification hidden">
-  <span id="message"></span>
-  <button onclick="dismiss()">✖</button>
-</div>
 
-<div class="container">
-  <h2>Day 7 – Notification Banner</h2>
-  <button class="btn success-btn" onclick="showSuccess()">Show Success</button>
-  <button class="btn error-btn" onclick="showError()">Show Error</button>
-</div>
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">SATIC</div>
@@ -48,15 +38,49 @@
     </ul>
   </nav>
 
+
+<!-- Notification Banner -->
+  <div id="notification" class="notification hidden">
+  <span id="message"></span>
+  <button onclick="dismiss()">✖</button>
+</div>
+
+<div class="container">
+  <button class="btn success-btn" onclick="showSuccess()">Show Success</button>
+  <button class="btn error-btn" onclick="showError()">Show Error</button>
+</div>
+
   <!-- MAIN CONTENT -->
   <main id="id1">
-     <marquee direction="Right" style="color: red;"><b>Welcome!</b></marquee>
+    <marquee direction="Right" style="color: red;"><b>Welcome!</b></marquee>
     <h1>Frontend Internship</h1><br>
-    <h2>Day-6 Task Completed</h2><br>
     <p>Name: <strong>Hemant</strong></p><br>
     <p>This website is deployed using GitHub Pages.</p><br>
-
   
+  <!-- From -->
+ <section class="from-section">
+  <h2> Basic Form Submission</h2>
+  <from id="basicfrom" class="basic-from">
+    <div class="from-group">
+      <label for="username">
+        Your Name
+      </label>
+      <input type="text" id="username" placeholder="Enter Your Name"/>
+      <small class="error-text" id="nameError">Name Is requried</small>
+    </div>
+    <button type="submit" id="submitBtn" disabled>submit</button>
+  </from>
+ </section>
+
+
+    <!-- day-2 -->
+    <section>
+      <button class="btn primary-btn">Primary Button</button>
+      <button class="btn primary-btn" disabled>Disabled Button</button>
+    </section>  
+  
+
+    
   <section class="card-section">
   <h2 class="card-title">Reusable Card Component</h2>
 
@@ -108,38 +132,40 @@ function onSubmitForm() {
   }
 }
 </script>
-  <!-- footer -->
- <footer class="footer">
-    <div class="footer-container">
 
-      <div class="footer-column">
-        <h3>SATIC</h3>
-        <p>Frontend Internship Project</p>
-      </div>
+<button class="go-Top-Btn"id="goTopBtn" aria-label="Go to top">
+  ↑
+</button> 
 
-      <div class="footer-column">
-        <h4>Links</h4>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
+<!-- Footer -->
 
-      <div class="footer-column">
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Docs</a></li>
-          <li><a href="#">Support</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-   
-  </footer>
+<footer class="footer">
+  <div class="footer-container">
+   <div class="footer-column">
+      <h3>SATIC</h3>
+      <p>Frontend Intership Project</p>
+   </div>
+   <div class="footer-column">
+    <h4>Link</h4>
+    <ul>
+       <li><a href="#">Home</a></li>
+       <li><a href="#">About</a></li>
+       <li><a href="#">Services</a></li>
+       <li><a href="#">Contact</a></li>
+    </ul>
+   </div>
+   <div class="footer-column">
+    <h4>Resources</h4>
+    <ul>
+       <li><a href="#">GitHub</a></li>
+       <li><a href="#">Docs</a></li>
+       <li><a href="#">Support</a></li>
+    </ul>
+   </div>
+  <div class="footer-bottom">
+    © 2026 Hemant. All rights reserved.
+  </div>
+   </footer>
 
   <script src="script.js"></script>
 </body>

@@ -1,3 +1,4 @@
+
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
 
@@ -57,3 +58,41 @@ function showError() {
 function dismiss() {
   notification.classList.add("hidden");
 }
+
+// gotonup button
+const gotonup = document.getElementById("goTopBtn");
+
+window.addEventListener("scroll",()=>{
+  if(window.scrollY > 350){
+    gotonup.classList.add("show");
+  }else{
+    gotonup.classList.remove("show");
+  }
+});
+
+gotonup.addEventListener("click", ()=>{
+  window.scrollTo({
+    top : 0,
+    behavior : "smooth",
+  });
+});
+
+//from
+const form = document.getElementById("basicfrom");
+const username = document.getElementById("username");
+const submitBtn = document.getElementById("SubitBtn");
+const errorText = document.getElementById("nameError");
+username.addEventListener("input", ()=>{
+ const valid = username.value.trim() !== "";
+ submitBtn.disabled=!valid;
+ errorText.style.display=valid ? "none" : "block";
+ username.classList.toggle("error",!valid);
+});
+
+form.addEventListener("submit",(e)=>{
+e.preventDefault();
+if(!username.value.trim()) return;
+showSuccess();
+form.reset();
+submitBtn.disabled= true;
+});
